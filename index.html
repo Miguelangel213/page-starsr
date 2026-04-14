@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Únete a nuestra red de inversión y mercadeo. Genera ingresos desde casa." />
+  <title>Libertad Financiera | Red de Inversiones</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════
+       NOISE OVERLAY (decorativo)
+  ══════════════════════════════════════ -->
+  <div class="noise-overlay" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════
+       BOTÓN FLOTANTE DE WHATSAPP
+  ══════════════════════════════════════ -->
+  <a
+    href="#"
+    class="wa-float"
+    id="wa-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Escríbenos por WhatsApp"
+    title="Escríbenos por WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-float-pulse" aria-hidden="true"></span>
+  </a>
+
+  <!-- ══════════════════════════════════════
+       NAV
+  ══════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">STARS NETWORK</span>
+      <a href="#contacto" class="nav-cta" id="nav-cta">Únete Ahora</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO
+  ══════════════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+
+      <span class="hero-badge reveal">✦ Oportunidad de Inversión Exclusiva ✦</span>
+
+      <h1 class="hero-title reveal reveal-delay-1">
+        Construye tu<br>
+        <em>Libertad Financiera</em><br>
+        desde hoy
+      </h1>
+
+      <p class="hero-sub reveal reveal-delay-2">
+        Únete a nuestra red de inversión y mercadeo que ha
+        transformado la vida de cientos de personas.<br>
+        Sin experiencia previa requerida.
+      </p>
+
+      <div class="hero-divider reveal reveal-delay-3" aria-hidden="true"></div>
+
+      <!-- ── FORMULARIO DE CAPTURA ── -->
+      <form class="hero-form reveal reveal-delay-4" id="lead-form" novalidate>
+
+        <div class="form-row">
+          <div class="field-wrap">
+            <input
+              type="text"
+              id="f-nombre"
+              name="nombre"
+              placeholder="Tu nombre completo"
+              autocomplete="name"
+              required
+            />
+            <span class="field-line" aria-hidden="true"></span>
+          </div>
+          <div class="field-wrap">
+            <input
+              type="tel"
+              id="f-telefono"
+              name="telefono"
+              placeholder="Tu número de teléfono"
+              autocomplete="tel"
+              required
+            />
+            <span class="field-line" aria-hidden="true"></span>
+          </div>
+        </div>
+
+        <div class="field-wrap">
+          <input
+            type="email"
+            id="f-email"
+            name="email"
+            placeholder="Tu correo electrónico (opcional)"
+            autocomplete="email"
+          />
+          <span class="field-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="field-wrap select-wrap">
+          <select id="f-meta" name="meta" required>
+            <option value="" disabled selected>¿Cuánto quieres ganar al mes?</option>
+            <option value="$500 - $1,000 USD">$500 – $1,000 USD</option>
+            <option value="$1,000 - $3,000 USD">$1,000 – $3,000 USD</option>
+            <option value="$3,000 - $5,000 USD">$3,000 – $5,000 USD</option>
+            <option value="$5,000+ USD">$5,000+ USD</option>
+          </select>
+          <span class="select-arrow" aria-hidden="true">▾</span>
+          <span class="field-line" aria-hidden="true"></span>
+        </div>
+
+        <!-- BOTÓN WHATSAPP #1 — Formulario Hero -->
+        <button type="submit" class="btn-wa" id="btn-form">
+          <svg class="btn-wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Quiero Saber Más por WhatsApp
+        </button>
+
+        <p class="form-note">🔒 Tu información es 100% privada. Sin spam.</p>
+
+      </form>
+    </div>
+
+    <!-- Decoración geométrica -->
+    <div class="hero-geo geo-1" aria-hidden="true"></div>
+    <div class="hero-geo geo-2" aria-hidden="true"></div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       ESTADÍSTICAS
+  ══════════════════════════════════════ -->
+  <section class="stats" aria-label="Estadísticas de la red">
+    <div class="stats-inner">
+      <div class="stat-item scroll-reveal">
+        <span class="stat-num" data-target="2400">0</span>
+        <span class="stat-suffix">+</span>
+        <span class="stat-label">Miembros Activos</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat-item scroll-reveal">
+        <span class="stat-num" data-prefix="$" data-target="3.2" data-decimal>0</span>
+        <span class="stat-suffix">M</span>
+        <span class="stat-label">Pagados a la Red</span>
+      </div>
+      <div class="stat-divider" aria-hidden="true"></div>
+      <div class="stat-item scroll-reveal">
+        <span class="stat-num" data-target="47">0</span>
+        <span class="stat-label">Países Disponibles</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CÓMO FUNCIONA
+  ══════════════════════════════════════ -->
+  <section class="how" id="como-funciona">
+    <div class="section-header scroll-reveal">
+      <span class="section-tag">El Sistema</span>
+      <h2 class="section-title">
+        3 pasos para empezar a<br>
+        <strong>generar ingresos</strong>
+      </h2>
+    </div>
+
+    <div class="steps-grid">
+      <article class="step-card scroll-reveal" data-num="01">
+        <span class="step-icon" aria-hidden="true">📋</span>
+        <h3>Regístrate</h3>
+        <p>Completa el formulario y un asesor te contactará en menos de 24 horas para guiarte personalmente.</p>
+      </article>
+      <article class="step-card scroll-reveal" data-num="02">
+        <span class="step-icon" aria-hidden="true">🎓</span>
+        <h3>Capacítate</h3>
+        <p>Accede a nuestro sistema de formación exclusivo y aprende las estrategias que ya funcionan.</p>
+      </article>
+      <article class="step-card scroll-reveal" data-num="03">
+        <span class="step-icon" aria-hidden="true">💰</span>
+        <h3>Genera Ingresos</h3>
+        <p>Activa tu red, duplica resultados y cobra comisiones semanales directo a tu cuenta.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       BENEFICIOS
+  ══════════════════════════════════════ -->
+  <section class="benefits" id="beneficios">
+    <div class="section-header scroll-reveal">
+      <span class="section-tag">Por qué elegirnos</span>
+      <h2 class="section-title">Lo que obtienes al<br><strong>unirte hoy</strong></h2>
+    </div>
+
+    <div class="benefits-grid">
+      <article class="benefit-card scroll-reveal">
+        <span class="benefit-icon" aria-hidden="true">◆</span>
+        <div class="benefit-text">
+          <h4>Ingresos Residuales</h4>
+          <p>Cobra aunque no estés trabajando. Tu red trabaja por ti las 24 horas del día.</p>
+        </div>
+      </article>
+      <article class="benefit-card scroll-reveal">
+        <span class="benefit-icon" aria-hidden="true">◆</span>
+        <div class="benefit-text">
+          <h4>Sin Inversión Inicial Alta</h4>
+          <p>Empieza con capital accesible. El sistema está diseñado para escalar gradualmente.</p>
+        </div>
+      </article>
+      <article class="benefit-card scroll-reveal">
+        <span class="benefit-icon" aria-hidden="true">◆</span>
+        <div class="benefit-text">
+          <h4>Mentoría 1 a 1</h4>
+          <p>Tendrás un mentor experimentado que te guiará paso a paso hasta tu primera comisión.</p>
+        </div>
+      </article>
+      <article class="benefit-card scroll-reveal">
+        <span class="benefit-icon" aria-hidden="true">◆</span>
+        <div class="benefit-text">
+          <h4>Trabajo 100% Digital</h4>
+          <p>Trabaja desde cualquier lugar del mundo, solo necesitas tu celular y conexión a internet.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       TESTIMONIOS
+  ══════════════════════════════════════ -->
+  <section class="testimonials" id="testimonios">
+    <div class="section-header scroll-reveal">
+      <span class="section-tag">Resultados Reales</span>
+      <h2 class="section-title">Lo que dicen nuestros<br><strong>miembros exitosos</strong></h2>
+    </div>
+
+    <div class="testi-grid">
+      <article class="testi-card scroll-reveal">
+        <span class="testi-quote" aria-hidden="true">"</span>
+        <p>En solo 3 meses pasé de ganar el mínimo a generar más de $2,000 al mes desde casa. Jamás pensé que sería posible.</p>
+        <footer class="testi-footer">
+          <strong class="testi-name">CARLOS M.</strong>
+          <span class="testi-role">Colombia · Miembro desde 2023</span>
+        </footer>
+      </article>
+      <article class="testi-card scroll-reveal">
+        <span class="testi-quote" aria-hidden="true">"</span>
+        <p>Lo mejor fue la mentoría. Siempre tuve apoyo y eso marcó toda la diferencia. Hoy tengo un equipo de 40 personas.</p>
+        <footer class="testi-footer">
+          <strong class="testi-name">ANDREA V.</strong>
+          <span class="testi-role">México · Miembro desde 2022</span>
+        </footer>
+      </article>
+      <article class="testi-card scroll-reveal">
+        <span class="testi-quote" aria-hidden="true">"</span>
+        <p>Era totalmente escéptico. Hoy tengo ingresos que me permiten viajar y estar con mi familia. El sistema realmente funciona.</p>
+        <footer class="testi-footer">
+          <strong class="testi-name">ROBERTO F.</strong>
+          <span class="testi-role">Argentina · Miembro desde 2023</span>
+        </footer>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       CTA FINAL
+  ══════════════════════════════════════ -->
+  <section class="final-cta" id="contacto">
+    <div class="final-cta-inner scroll-reveal">
+      <span class="section-tag">¿Estás listo?</span>
+      <h2 class="final-title">
+        ¿Listo para cambiar<br>
+        <em>tu historia?</em>
+      </h2>
+      <p class="final-sub">Cupos limitados por semana. No dejes que otro tome el lugar que podría ser tuyo.</p>
+
+      <!-- BOTÓN WHATSAPP #2 — CTA Final -->
+      <a
+        href="#"
+        class="btn-gold"
+        id="btn-final"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg class="btn-wa-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        Contáctame por WhatsApp Ahora
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">STARS NETWORK</span>
+      <p class="footer-legal">© 2026 · Todos los derechos reservados</p>
+      <p class="footer-disclaimer">Resultados no garantizados · Los ingresos dependen del esfuerzo individual</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
