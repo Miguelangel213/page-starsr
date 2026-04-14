@@ -93,11 +93,7 @@ function abrirWhatsApp(nombre, telefono, email, meta) {
   const lineas = [
     "¡Hola! Me acabo de registrar en Stars Network.",
     "",
-    "👤 Nombre: " + nombre,
-    "📱 Teléfono: " + telefono,
-    email ? "📧 Email: " + email : null,
-    "💰 Meta mensual: " + meta,
-    "",
+   
     "Quiero empezar a generar ingresos. ¿Cuáles son los siguientes pasos?",
   ].filter(Boolean).join("\n");
 
